@@ -1,0 +1,52 @@
+GET http://localhost:3000/users
+
+### 
+
+GET http://localhost:3000/users?limit=1&offset=2&order=oldest
+
+### 
+
+GET http://localhost:3000/users/73cb9639-d8b7-4f11-9a62-53f4187f3f11
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "winter@codeit.com", 
+  "firstName": "민정",
+  "lastName": "김",
+  "address": "대한민국 부산광역시 중구 남포동",
+}
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "wonyoung@codeit.com", 
+  "firstName": "원영",
+  "lastName": "장",
+  "address": "서울특별시 용산구 이촌동",
+  "userPreference": {
+    "receiveEmail": false
+  }
+}
+
+###
+
+PATCH http://localhost:3000/users/5aba4e29-3336-4950-8a17-a25c16122514
+Content-Type: application/json
+
+{
+  "email": "ive_wonyoung@codeit.com",
+  "userPreference": {
+    "receiveEmail": true
+  }
+}
+
+###
+
+DELETE http://localhost:3000/users/b88cea49-8044-4057-b3ed-1c864e45c7cd
