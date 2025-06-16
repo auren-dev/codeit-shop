@@ -2,6 +2,10 @@ GET http://localhost:3000/users
 
 ### 
 
+GET https://codeit-shop.onrender.com/users
+
+### 
+
 GET http://localhost:3000/users?limit=1&offset=2&order=oldest
 
 ### 
